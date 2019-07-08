@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>成都数据大屏</title>
+		<!--[if lte IE 8]><script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script><![endif]-->
+		<link rel="stylesheet" href="libs/reset.css" />
+		<link rel="stylesheet" href="web/static/css/index.css" />
+		<script src="libs/jquery-1.11.1.min.js"></script>
+		<script src="libs/echarts.min.js"></script>
+		<script src="libs/jquery.ba-resize.min.js"></script>
+		<script src="web/static/js/index.js"></script>
+		<script src="libs/jquery.waypoints.min.js"></script>
+    	<script src="libs/jquery.countup.min.js"></script>
+	</head>
+	<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />-->
+	<body>
+		<div class="whole">
+			<div class="toubu">
+				<h2 class="zhuti">成都数据大屏</h2>
+				<div class="time"></div>
+			</div>
+			<div class="main clearfix">
+				<div class="cont01">
+					<ul class="shujulist01 clearfix">
+						<li class="ac">历年班级数量</li>
+						<li>历年通过率</li>
+						<li>历年学员数量</li>
+					</ul>
+					<ul class="shujulist02">
+						<li class="box01">
+							<div id="container01"></div>
+						</li>
+						<li class="box02 hide">
+							<div id="container02"></div>
+						</li>
+						<li class="box03 hide">
+							<div id="container03"></div>
+						</li>
+					</ul>
+					<div class="danwei clearfix">
+						<h2>单位排行</h2>
+						<img src="web/static/img/ico01.png" alt="" />
+					</div>
+					<div class="cont01_01">
+						<ul class="shujulist03 clearfix">
+							<li class="ae">
+								<div class="check year"><img class="xuanzhong ic01" src="web/static/img/ico03.png" alt="" /></div>
+								<p>全年</p>
+							</li>
+							<li>
+								<div class="check month"><img class="xuanzhong hide ic02" src="web/static/img/ico03.png" alt="" /></div>
+								<p>本月</p>
+							</li>
+							<li>
+								<div class="check today"><img class="xuanzhong hide ic03" src="web/static/img/ico03.png" alt="" /></div>
+								<p>今天</p>
+							</li>
+						</ul>
+						<ul class="shujulist04">
+							<li class="clearfix">
+								<h2>1</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>2</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>3</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>4</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>5</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>6</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>7</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>8</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>9</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+							<li class="clearfix">
+								<h2>10</h2>
+								<p class="mingcheng">某某某某某某机关单位</p>
+								<p class="shuliang">785</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="cont02">
+					<div class="peixun clearfix">
+						<h2>总体培训情况</h2>
+						<img src="web/static/img/ico053.png" alt="" />
+					</div>
+					<ul class="shujulist05 clearfix">
+						<li>
+							<h1 class="num">2345</h1>
+							<p>培训人次</p>
+						</li>
+						<li>
+							<h1 class="num">121</h1>
+							<p>班级数量</p>
+						</li>
+						<li>
+							<h1 class="num">0.98</h1>
+							<p>通过率</p>
+						</li>
+					</ul>
+					<div class="map">
+						<div class="map1 city">
+							<img src="web/static/img/map01.png" alt="" />
+							<div class="city01">彭州市</div>
+						</div>
+						<div class="map2 city">
+							<img src="web/static/img/map02.png" alt="" />
+							<div class="city02 hide">都江堰市</div>
+						</div>
+						<div class="map3 city">
+							<img src="web/static/img/map03.png" alt="" />
+							<div class="city03 hide">崇州市</div>
+						</div>
+						<div class="map4 city">
+							<img src="web/static/img/map04.png" alt="" />
+							<div class="city04 hide">大邑县</div>
+						</div>
+						<div class="map5 city">
+							<img src="web/static/img/map05.png" alt="" />
+							<div class="city05 hide">邛崃市</div>
+						</div>
+						<div class="map6 city">
+							<img src="web/static/img/map06.png" alt="" />
+							<div class="city06 hide">蒲江县</div>
+						</div>
+						<div class="map7 city">
+							<img src="web/static/img/map07.png" alt="" />
+							<div class="city07 hide">新津县</div>
+						</div>
+						<div class="map8 city">
+							<img src="web/static/img/map08.png" alt="" />
+							<div class="city08 hide">双流区</div>
+						</div>
+						<div class="map9 city">
+							<img src="web/static/img/map09.png" alt="" />
+							<div class="city09 hide">简阳市</div>
+						</div>
+						<div class="map10 city">
+							<img src="web/static/img/map10.png" alt="" />
+							<div class="city10 hide">金堂县</div>
+						</div>
+						<div class="map11 city">
+							<img src="web/static/img/map11.png" alt="" />
+							<div class="city11 hide">青白江区</div>
+						</div>
+						<div class="map12 city">
+							<img src="web/static/img/map12.png" alt="" />
+							<div class="city12 hide">新都区</div>
+						</div>
+						<div class="map13 city">
+							<img src="web/static/img/map13.png" alt="" />
+							<div class="city13 hide">郫都区</div>
+						</div>
+						<div class="map14 city">
+							<img src="web/static/img/map14.png" alt="" />
+							<div class="city14 hide">温江区</div>
+						</div>
+						<div class="map15 city">
+							<img src="web/static/img/map15.png" alt="" />
+							<div class="city15 hide">青羊区</div>
+						</div>
+						<div class="map16 city">
+							<img src="web/static/img/map16.png" alt="" />
+							<div class="city16 hide">金牛区</div>
+						</div>
+						<div class="map17 city">
+							<img src="web/static/img/map17.png" alt="" />
+							<div class="city17 hide">武侯区</div>
+						</div>
+						<div class="map18 city">
+							<img src="web/static/img/map18.png" alt="" />
+							<div class="city18 hide">锦江区</div>
+						</div>
+						<div class="map19 city">
+							<img src="web/static/img/map19.png" alt="" />
+							<div class="city19 hide">成华区</div>
+						</div>
+						<div class="map20 city">
+							<img src="web/static/img/map20.png" alt="" />
+							<div class="city20 hide">龙泉驿区</div>
+						</div>
+					</div>
+					<div class="map01 hide">
+						<img src="web/static/img/map01.png" alt="" />
+						<img src="web/static/img/map02.png" alt="" />
+						<img src="web/static/img/map03.png" alt="" />
+						<img src="web/static/img/map04.png" alt="" />
+						<img src="web/static/img/map05.png" alt="" />
+						<img src="web/static/img/map06.png" alt="" />
+						<img src="web/static/img/map07.png" alt="" />
+						<img src="web/static/img/map08.png" alt="" />
+						<img src="web/static/img/map09.png" alt="" />
+						<img src="web/static/img/map10.png" alt="" />
+						<img src="web/static/img/map11.png" alt="" />
+						<img src="web/static/img/map12.png" alt="" />
+						<img src="web/static/img/map13.png" alt="" />
+						<img src="web/static/img/map14.png" alt="" />
+						<img src="web/static/img/map15.png" alt="" />
+						<img src="web/static/img/map16.png" alt="" />
+						<img src="web/static/img/map17.png" alt="" />
+						<img src="web/static/img/map18.png" alt="" />
+						<img src="web/static/img/map19.png" alt="" />
+						<img src="web/static/img/map20.png" alt="" />
+					</div>
+					<div class="peixun clearfix">
+						<h2>历年总学时</h2>
+						<img src="web/static/img/ico053.png" alt="" />
+					</div>
+					<div class="zongxueshi box04">
+						<div id="container04"></div>
+					</div>
+				</div>
+				<div class="cont03">
+					<div class="xingbie clearfix">
+						<h2>学员性别比率</h2>
+						<img src="web/static/img/ico01.png" alt="" />
+					</div>
+					<div class="box05">
+						<div id="container05"></div>
+					</div>
+					<div class="age clearfix">
+						<h2>学员年龄分布图</h2>
+						<img src="web/static/img/ico01.png" alt="" />
+					</div>
+					<div class="box06">
+						<div id="container06"></div>
+					</div>
+					<div class="kecheng clearfix">
+						<h2>课程分布</h2>
+						<img style="width: 70%;" src="web/static/img/ico01.png" alt="" />
+					</div>
+					<div class="box07">
+						<div id="container07"></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
